@@ -19,7 +19,7 @@ def bubbleSort (arr):
             break
         
     
-    return[arr]
+    return arr
 
 #populates array with random integers, calls bubblesort function
 

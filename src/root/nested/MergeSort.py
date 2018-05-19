@@ -11,7 +11,6 @@ def merge (arr, leftStart, rightEnd):
     temp = [None]*10
     leftEnd = ((leftStart + rightEnd)//2)
     rightStart = leftEnd+1
-    size = rightEnd - leftStart +1
     l = leftStart
     r = rightStart
     index = leftStart
@@ -50,7 +49,7 @@ def mergeSort (arr, leftStart, rightEnd):
         mergeSort(arr, middle+1, rightEnd)
         merge (arr, leftStart, rightEnd)
     
-    return[arr]
+    return arr
 
 #populates array with random integers, calls Mergesort function
 
